@@ -6,12 +6,17 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyConfig {
 	@Bean
-	public AB ab(A aobj, B bobj) {
-		AB abobj = new AB(aobj, bobj);
-		abobj.setAobj(aobj);
-		return abobj;
+	public AB ab(B bobj) {
+		AB ab = new AB(bobj);
+		A aobj = new A();
+		aobj.setA(90);
+		aobj.setMsg("Afternoon");
+		ab.setAobj(aobj);
+		return ab;
+
 	}
 
+//
 	@Bean
 	public A createA() {
 		A aobj = new A();
@@ -20,9 +25,10 @@ public class MyConfig {
 		return aobj;
 	}
 
+//
 	@Bean
 	public B createB() {
 		return new B(67, "Good Sunday");
 	}
-
+//
 }

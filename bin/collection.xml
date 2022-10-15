@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	
+   
+    	
+    	<bean id="emp" class="injectingcollection.Employee">
+    	<property name="empList">
+    	<list>
+    	  <value>A</value>
+    	  <value>A</value>
+    	  <value>B</value>
+    	  <value>C</value>
+    	  
+    	</list>
+    	</property>
+    	
+    	<property name="empSet">
+    	<set>
+    	  <value>A</value>
+    	  <value>A</value>
+    	  <value>B</value>
+    	  <value>B</value>
+    	  
+    	</set>
+    	</property>
+    	
+    	<property name="empMap">
+    	<map>
+    	  <entry key="k1" value="v1"/>
+    	  <entry key="k2" value="v2"/>
+    	  <entry key="k3" value="v3"/>
+    	 </map>
+    	</property>
+    	
+    	<property name="empProps">
+    	<props>
+    	  <prop key="k1"> v1 </prop>
+    	 <prop key="k2"> v2 </prop>
+    	  <prop key="k3"> v3 </prop>    	  
+    	</props>
+    	</property>
+    	
+    	</bean>
+
+  
+</beans>
+
+
+
+
+

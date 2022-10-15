@@ -9,9 +9,9 @@ public class AB {
 		aobj = refobj;
 	}
 
-	AB(A aobj, B refobj) {
-		bobj = refobj;
-		aobj = aobj;
+	AB(B refobj) {
+		System.out.println("AB constructor");
+		this.bobj = refobj;
 	}
 
 	public void show() {

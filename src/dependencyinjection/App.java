@@ -11,6 +11,12 @@ public class App {
 //		AB ab = (AB) ctx.getBean("abobj");
 //		ab.show();
 
+		// using XML Configuration
+
+//		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+//		AB ab = (AB) ctx.getBean("abobj");
+//		ab.show();
+
 		// using Java class annotation
 
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(MyConfig.class);
