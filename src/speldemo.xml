@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	
+    <!-- Define your beans here -->
+    <context:annotation-config/>
+
+    <context:component-scan base-package="speldemo"></context:component-scan>
+
+  <!-- <bean id="person" class="speldemo.Person">
+  <property name="name" value="Hari"></property>
+  <property name="mobileNumber" value="9897988998"></property>
+  </bean>
+  
+  <bean id="customer" class="speldemo.Customer">
+  <property name="person" value="#{person1}"></property>
+  <property name="customerName" value="#{person1.name}"></property>
+  <property name="phoneNumber" value="#{person1.mobileNumber}"></property>
+   </bean>
+   -->
+  
+  
+  
+ 
+    
+    	
+
+     
+     
+   </beans>
