@@ -8,23 +8,25 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 	
-    <!-- Define your beans here -->
-    
-    <!-- define the dependency 
-    <bean id="aobj"
-    		class="com.fita.A">
+    <!-- Define your beans here 
+    <bean id="aobj" class="com.fita.A">
     	</bean>
-    	
     	<bean id="basketball"
     		class="com.fita.BasketballCoach">
     	</bean>
-    	
-    	
     	<bean id="hockey"
     		class="com.fita.Hockeycoach">
     	</bean>
+    	-->
+    <!-- define the dependency 
+    
     	
-        <bean id="bobj1" class="dependencyinjection.B">
+    	
+    	
+    	
+    	
+   --> 	
+     <bean id="bobj1" class="dependencyinjection.B">
     <constructor-arg name="b" value="78"/>
     <constructor-arg name="msg" value="Hi All"/>
        		
@@ -34,11 +36,11 @@
     <property name="msg" value="Hello All"/>
     		
     	</bean>
-    	<bean id="abobj" class="dependencyinjection.AB">
+    	<bean id="abobj" class="dependencyinjection.AB" >
     	     <constructor-arg ref="bobj1"/>
+    	      <constructor-arg ref="aobj1"/>
     	</bean>	
-
--->
+ 
    			
        		
     	

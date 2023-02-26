@@ -1,11 +1,9 @@
 package qualifierdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Job {
 	@Autowired
-	@Qualifier("p2")
 	private Person person;
 
 	public Job() {

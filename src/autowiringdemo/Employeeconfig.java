@@ -7,14 +7,14 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan(basePackages = "autowiringdemo")
 public class Employeeconfig {
-	@Bean(name = "myemployee")
+	@Bean
 	public Employee emp() {
-		Employee empl = new Employee();
-		Address add = new Address();
-		add.setCity("Hyderabad");
-		add.setState("Telungana");
+		Employee employee = new Employee();
+		Address address = new Address();
+		address.setCity("Hyderabad");
+		address.setState("Telungana");
 //		Employee e = new Employee(add);
-		empl.setAddress(add);
-		return empl;
+		employee.setAddress(address);
+		return employee;
 	}
 }

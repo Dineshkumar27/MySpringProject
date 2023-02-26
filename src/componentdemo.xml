@@ -14,10 +14,10 @@
     
      <context:annotation-config/>
     <!--  <context:component-scan base-package="autowiringdemo"></context:component-scan>--> 
-<bean id="address1" class="autowiringdemo.Address">
+<bean id="address" class="autowiringdemo.Address">
 <property name="city"  value="Chennai"/>
 <property name="state" value="Tamilnadu"/>
 </bean>
-<bean id="employee" class="autowiringdemo.Employee"/>
+<bean id="employee" class="autowiringdemo.Employee" autowire="constructor"/>
     	
    </beans>

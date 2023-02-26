@@ -12,6 +12,7 @@ public class Employee {
 		System.out.println("Default Constructor");
 	}
 
+	@Autowired(required = false)
 	public Employee(Address address) {
 		super();
 		this.address = address;
@@ -22,7 +23,6 @@ public class Employee {
 		return address;
 	}
 
-	@Autowired
 	public void setAddress(Address address) {
 		this.address = address;
 	}

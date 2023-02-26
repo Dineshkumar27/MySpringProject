@@ -13,15 +13,15 @@
 
     <context:component-scan base-package="speldemo"></context:component-scan>
 
-  <!-- <bean id="person" class="speldemo.Person">
+<!--   <bean id="person" class="speldemo.Person">
   <property name="name" value="Hari"></property>
   <property name="mobileNumber" value="9897988998"></property>
   </bean>
   
   <bean id="customer" class="speldemo.Customer">
-  <property name="person" value="#{person1}"></property>
-  <property name="customerName" value="#{person1.name}"></property>
-  <property name="phoneNumber" value="#{person1.mobileNumber}"></property>
+  <property name="person" value="#{person}"></property>
+  <property name="customerName" value="#{person.name}"></property>
+  <property name="phoneNumber" value="#{person.mobileNumber}"></property>
    </bean>
    -->
   

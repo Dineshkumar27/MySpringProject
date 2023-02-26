@@ -1,6 +1,7 @@
 package dependencyinjection;
 
 public class A {
+//	property
 	String msg;
 	int a;
 

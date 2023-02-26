@@ -7,12 +7,16 @@ import org.springframework.stereotype.Component;
 public class Person {// bean name: person
 	@Value("${person.id}")
 	private int id;
-	@Value("#{'dinesh'.toUpperCase()}")
+	@Value("#{${person.name}.toUpperCase()}")
 	private String name;
 	@Value("${person.email}")
 	private String email;
 
-//no getter and setter method
+//	private int id;
+//	private String name;
+//	private String email;
+
+	// no getter and setter method
 	@Override
 	public String toString() {
 

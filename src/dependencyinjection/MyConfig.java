@@ -5,12 +5,11 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class MyConfig {
+	A aobj;
+
 	@Bean
-	public AB ab(B bobj) {
-		AB ab = new AB(bobj);
-		A aobj = new A();
-		aobj.setA(90);
-		aobj.setMsg("Afternoon");
+	public AB ab(A aobj, B bobj) {
+		AB ab = new AB(aobj, bobj);
 		ab.setAobj(aobj);
 		return ab;
 
@@ -19,7 +18,7 @@ public class MyConfig {
 //
 	@Bean
 	public A createA() {
-		A aobj = new A();
+		aobj = new A();
 		aobj.setA(90);
 		aobj.setMsg("Good Afternoon");
 		return aobj;

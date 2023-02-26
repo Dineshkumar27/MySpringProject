@@ -10,15 +10,15 @@
 	
     <!-- Define your beans here -->
     
-    <!-- define the dependency 
+    <!-- define the dependency -->
     
-  <context:property-placeholder location="classpath:persondata.properties"/>
+ <!--  <context:property-placeholder location="classpath:persondata.properties"/>
   <bean id="person1" class="valueannotation.Person">
   <property name="id" value="${person.id}"></property>
   <property name="name" value="${person.name}"></property>
   <property name="email" value="${person.email}"></property>
-  </bean>
-  -->
+  </bean> -->
+  
   
   <context:annotation-config/>
   <context:property-placeholder location="classpath:persondata.properties"/>

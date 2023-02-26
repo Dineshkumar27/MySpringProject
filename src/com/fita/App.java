@@ -6,12 +6,14 @@ public class App {
 
 	public static void main(String[] args) {
 
-		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("basic.xml");
-		A obj = (A) ctx.getBean("aobj");
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+		A obj = (A) ctx.getBean("aobj");// object creation using spring context
+//		A aobj=new A();//normal java
 		obj.m1();
+//        Coach->BB coach or hockey coach
+		Coach coach = ctx.getBean("hockey", Coach.class);
+		coach.todayActivity();
 
-//		Coach coach = ctx.getBean("basketball", Coach.class);
-//		coach.todayActivity();
 	}
 
 }

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class MyConfig {
 	@Bean
-	@Scope("prototype")
+	@Scope("singleton")
 	@Lazy(true)
 	public Hello hello() {
 		return new Hello();
